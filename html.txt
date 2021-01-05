@@ -1,0 +1,3250 @@
+                                        Audio Add
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio Add</title>
+</head>
+<body>
+    <h1>Music Unlimited</h1>
+    <!--
+    <audio controls="controls" autoplay="autoplay" muted="muted" loop="loop" src="Adhaaru.mp3"></audio>
+
+
+    <audio controls="controls" autoplay="autoplay" preload="auto" preload="none" preload="metadata" src="Adhaaru.mp3"></audio>
+    -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            Download Attributes
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download Attributes</title>
+</head>
+<body>
+    <a href="Meter.png" download="Meter.png">Download Image</a><br><br>   download attribute ke liye href ka hona bahut jaruri hai
+    <a href="Music.MP3" download="Music.MP3">Download Image</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                              Embed Tag & Noembed Tag
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Embed Tag & Noembed Tag</title>
+</head>
+<body>
+    <!--- This <Embed> tag is used to embed an audio files or Video files on web pages
+    This defined a container for an External Application or Interactive Copntent (a plug-in)
+
+    issme opening tag hi hota in HTML me but closing tag bhi de skte hai, closing tag nessecary hota XHTML ke liye
+
+    Attribute                  Value               Description
+    type                     Media Type
+    height                     Pixel
+    width                      Pixel
+    src                         URL
+
+
+    <embed height="300" width="500" src="Weekend.mp4" type="video/mp4">
+    </video>
+    -->
+
+    <embed height="300" width="500" src="peng.swf" type="application/x-shockwave-flash">   # swf tab hota hai jab Emogi video type ka data ho
+    <noembed> Your code doesn't Support on this Browser so please go and get other platforms,Thank you <br> <br>
+        <img src="error.jpg">
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        Field Set Tag
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Field Set Tag</title>
+    </head>
+    <body>
+        <!--
+        This creates a box around the related form Controls
+        ye create karta hai ek box jiske ander me name,password and city create hoga
+
+        <form>
+            <fieldset>
+                Name :<input type="text" name="fname">
+                <br>
+                <br>
+                Password :<input type="password" name="pass">
+                <br>
+                <br>
+                City :<input type="text" name="pass">
+            </fieldset>
+
+
+        <form>
+            <fieldset>
+                Name :<input type="text" name="fname">
+                <br>
+                <br>
+                Password :<input type="password" name="pass">
+                <br>
+                <br>
+                City :<input type="text" name="pass">
+            </fieldset>
+            <br>
+            <br>
+
+            <fieldset disabled>
+                Email :<input type="text" name="fname">
+                <br>
+                <br>
+                Password :<input type="password" name="pass">
+                <br>
+                <br>
+                City :<input type="text" name="pass">
+            </fieldset>
+ -->
+
+
+
+
+Legend Tag :- iss ka kaam User ko Information dene ke liye hota hai ki kiss type ka web page develop kiya gya hai
+
+        <form>
+            <fieldset>
+                <legend>
+                    Personal Info
+                </legend>
+                Name :<input type="text" name="fname">
+                <br>
+                <br>
+                Password :<input type="password" name="pass">
+                <br>
+                <br>
+                City :<input type="text" name="pass">
+            </fieldset>
+        </form>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                Form Tag
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Tag</title>
+</head>
+<body>
+<!--
+Form Tag :- Form tag is a tag which is used to collect some data from
+the site visitor.
+<form>...</form> tag is create an HTML form
+
+Opening Form tag and Closing Form Tag ke undar kuch aur bhi
+Form create kar skte hai
+like:-
+
+<input>   This is very imp
+<textarea>
+<button>
+<select>
+<option>
+<optgroup>
+<fieldset>
+<label>
+
+Form Tag Attributes :-
+
+Attributes              Value              Description
+
+accept-charset          UTF-8              Specifies the charset in the submitted form (default: page charset)
+
+action                  URL                Contains a URL that defines where to send the data after submitting the form
+
+autocomplete            On (default)       Detemines that the browser retains the history of privious value
+                        Off
+
+enctype                 --                 Specifies how  the browser enctype the that data before it sends it to the server.(default URL set)
+
+method                  Get (default)      Specifies how  to send data from Web server. The data can be sent as URL variable, by  using the get method or as HTTP post, by using the post method
+                        POST
+
+name
+
+novalidate              Ture               Specifies that the browser should not validate the form
+                        False
+
+target
+
+
+
+form tag ka use user se data collect karne ka hota hai apne Database me
+like user ka name mujhe pata nhi hai iske liye user khud apna nsme
+bataye iske liye ham FORM TAG ka use karte hai
+
+
+
+
+
+
+Action Attribute : Action Attribute ko Form Tag me nhi defined karne par ham currently jis web page par hote hai ussi par rehte hai
+
+
+    <form action="got form.django" accept-charset="UTF-8">
+            User_Name : <input type="text" name="name">
+            <br>
+            <br>
+            Password : <input type="password" name="pass">
+            <br>
+            <br>
+            Submit Here : <input type="submit" name="sub">
+            <input type="reset" name="re">
+    </form>
+
+    <form autocomplete="off" action="got form.django" accept-charset="UTF-8">   autocomplete="on "  dene se jo data pehle kisi ne enter kiya hoga wo data new entry ke time me show hota hai usi ko autocomplete kehte hai
+            User_Name : <input type="text" name="name" autocomplete="on">   autocomplete="off" dene se previous enter data shpw hona band ho jata hai.. agar autocomplete="on" Input tag me define hai aur Form Tag me autocomplete="off" hai to call Input Tag ko karega kyoki Input Tag ki Priorty jada hoti hai
+            <br>
+            <br>
+            Password : <input type="password" name="pass">
+            <br>
+            <br>
+            Submit Here : <input type="submit" name="sub" value="Submit">
+            <input type="reset" name="re">
+    </form>
+
+
+
+
+
+
+Method Attribute in Form Tag :- Action function defined karta hai kaha bhejna hai form data ko but Method Attribute defined karta hai ki kese send karna hai web server ko ye defined karta hai Method Attribute
+   Method Attribute me data ko sent kiya jata hai with the help of URL variables , by using get method or HTTP postby using the post method
+
+     GET Method :- Get send the data as part of the URL
+                   Append form-data into the URL in name/variable pairs
+                   The lg of a URL is limited 2048 character (means URL 2048 character ka hona chahiye
+                   Never use GET method if you have password keyword other sensiotive info to be sent to the server
+                   Useful for form submission wwhere a user want to bookmark the result
+                   GET is better for non-secure data, like query stings in Google
+                   GET can't be used to send binary data-- for ex :- Images or word documents
+      Syntax:- <form action="some.django" method="GET"></form>
+
+
+
+
+
+Method="GET" :-
+
+    <form autocomplete="off" action="got form.django" method="GET" accept-charset="UTF-8">   autocomplete="on "  dene se jo data pehle kisi ne enter kiya hoga wo data new entry ke time me show hota hai usi ko autocomplete kehte hai
+            User_Name : <input type="text" name="name" autocomplete="on">   autocomplete="off" dene se previous enter data shpw hona band ho jata hai.. agar autocomplete="on" Input tag me define hai aur Form Tag me autocomplete="off" hai to call Input Tag ko karega kyoki Input Tag ki Priorty jada hoti hai
+            <br>
+            <br>
+            Password : <input type="password" name="pass">
+            <br>
+            <br>
+            Submit Here : <input type="submit" name="sub" value="Submit">
+            <input type="reset" name="re">
+    </form>
+
+
+
+
+
+
+POST Method :- HTTP POST request supply additional data from the client (browser) to the server inn the msg body
+                    Post me limitation nhi hota hai data send karne ka but Get method me limitation hota hai
+                    Post jada Secure hota hai Get Method se
+
+    <form>
+
+            <form autocomplete="off" action="got form.django" method="POST" accept-charset="UTF-8">   autocomplete="on "  dene se jo data pehle kisi ne enter kiya hoga wo data new entry ke time me show hota hai usi ko autocomplete kehte hai
+            User_Name : <input type="text" name="name" autocomplete="on">   autocomplete="off" dene se previous enter data shpw hona band ho jata hai.. agar autocomplete="on" Input tag me define hai aur Form Tag me autocomplete="off" hai to call Input Tag ko karega kyoki Input Tag ki Priorty jada hoti hai
+            <br>
+            <br>
+            Password : <input type="password" name="pass">
+            <br>
+            <br>
+            Submit Here : <input type="submit" name="sub" value="Submit">
+            <input type="reset" name="re">
+    </form>
+
+
+
+
+
+
+Enctype Attribute in Form Tag :-
+         It specifies the browser encode the data before it send to the server
+
+        Syntax:- <form enctype="multipart/form-data"></form>
+
+    <form autocomplete="off" action="got form.django" enctype="multipart/form-data" method="get" accept-charset="UTF-8">
+        User_Name : <input type="text" name="name" autocomplete="on">
+        <br>
+        <br>
+        Password : <input type="password" name="pass">
+        <br>
+        <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+        <input type="reset" name="re">
+    </form>
+
+
+
+
+
+
+Required Attributes in Form Tag :-
+
+     <form autocomplete="off" action="got form.django" enctype="multipart/form-data" method="get" required="required" accept-charset="UTF-8">
+        User_Name : <input type="text" name="name" autocomplete="on">
+        <br>
+        <br>
+        City_Name : <input type="text" name="city" autocomplete="on">
+        <br>
+        <br>
+        Password : <input type="password" name="pass">
+        <br>
+        <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+        <input type="reset" name="re">
+    </form>
+
+
+
+
+
+
+Novalidate Attribute in Form Tag:- yaha par required keyword ki jarurat nhi hogi
+
+     <form autocomplete="off" action="got form.django" novalidate="novalidate" enctype="multipart/form-data" method="get" required="required" accept-charset="UTF-8">
+        User_Name : <input type="text" name="name" autocomplete="on">
+        <br>
+        <br>
+        City_Name : <input type="text" name="city" autocomplete="on">
+        <br>
+        <br>
+        Password : <input type="password" name="pass">
+        <br>
+        <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+        <input type="reset" name="re">
+    </form>
+
+
+
+
+
+Form novalidate :-
+
+     <form autocomplete="off" action="got form.django" method="get" accept-charset="UTF-8">
+        User_Name : <input type="text" name="name" autocomplete="on">
+        <br>
+        <br>
+        City_Name : <input type="text" name="city" autocomplete="on">
+        <br>
+        <br>
+        Password : <input type="password" name="pass">
+        <br>
+        <br>
+        Submit Here : <input type="submit" name="sub" value="Submit" >
+        <input type="submit" name="save" formnovalidate> formnovalidate se ye hoga ki ham agar koi field miss bhi kar de phir bhi data save ho jayega database me
+    </form>
+
+
+
+
+
+Upload File in Form tag :-
+
+     <form autocomplete="off" action="got form.django" method="get" accept-charset="UTF-8">
+        User_Name : <input type="text" name="name" autocomplete="on">
+        <br>
+        <br>
+        City_Name : <input type="text" name="city" autocomplete="on">
+        <br>
+        <br>
+        Password : <input type="password" name="pass">
+        <br>
+        <br>
+        Upload File : <input type="file" name="file" accept="image/*" >
+        <br>
+        <br>
+        Submit Here : <input type="submit" name="sub" value="Submit" >
+     </form>
+
+
+
+
+
+
+Autofocus Attibute in Form Tag :-
+
+     <form autocomplete="off" action="got form.django" method="get" accept-charset="UTF-8">
+        User_Name : <input type="text" name="name" autocomplete="on"  autofocus="autofocus">   autofocus cursur ko defined kar deta hai,
+        <br>
+        <br>
+        City_Name : <input type="text" name="city" autocomplete="on">
+        <br>
+        <br>
+        Password : <input type="password" name="pass">
+        <br>
+        <br>
+        Submit Here : <input type="submit" name="sub" value="Submit" >
+     </form>
+
+
+
+
+
+
+
+Dirname in Form Tag :- there are 3 attribute like Left-to-right, right-to-left, auto
+
+     <form autocomplete="off" action="got form.django" method="get" accept-charset="UTF-8">
+        User_Name : <input type="text" name="name" autocomplete="on"  autofocus="autofocus">   autofocus cursur ko defined kar deta hai,
+        <br>
+        <br>
+        City_Name : <input type="text" name="city" autocomplete="on" dirname="city.dir">
+        <br>
+        <br>
+        Password : <input type="password" name="pass" >
+        <br>
+        <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+     </form>
+
+
+
+
+
+
+Disabled Attribute :- iske sath Hidden attribute ka use nhi kar skte hai
+
+     <form autocomplete="off" action="got form.django" method="get" accept-charset="UTF-8">
+        User_Name : <input type="text" name="name" autocomplete="on" disabled="disabled" autofocus="autofocus">   disabled ka use karne se wo column disabled ho jata hai column means usme kuch bhi nhi likh skte hai aur uska data store nhi hota hai database me,
+        <br>                                                                                                      disabled ka use koi form license ka form bharte time me ya koi aur form ko fill karte time kuch attribute esa hota hai jisme yes karne par hi disable ko able kiya ja skta hai like age of user
+        <br>
+        City_Name : <input type="text" name="city" autocomplete="on" dirname="city.dir">
+        <br>
+        <br>
+        Password : <input type="password" name="pass" >
+        <br>
+        <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+     </form>
+
+
+
+
+
+
+
+Form Attribute in Form Tag:- iska kaam hota hai ek Form Tag ki property ko inherit karna dusre Form tag me
+
+     <form autocomplete="on" action="got form.django" method="get" accept-charset="UTF-8" id="form1">
+        User_Name   : <input type="text" name="name" autocomplete="on" autofocus="autofocus">
+         <br>
+         <br>
+        City_Name   : <input type="text" name="city" autocomplete="on" dirname="city.dir">
+        <br>
+        <br>
+        Password    : <input type="password" name="pass" form="form2">  ab ye password dono class ke liye work karega
+        <br>
+        <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+     </form>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    <form autocomplete="on" action="got form.django" method="get" accept-charset="UTF-8" id="form2">
+        User_Name : <input type="text" name="name" autocomplete="on" autofocus="autofocus">
+        <br>
+        <br>>
+        City_Name : <input type="text" name="city" autocomplete="on" dirname="city.dir">
+    </form>
+
+
+
+
+
+
+Form action Attribute in Form Tag:- action me use URL ko defined karna hota hai jaha hame jana hai, ye ek type ka
+                                    Inheritance hai jo hame ek path se dusre path ko connect karne me help karta hai
+
+     <form autocomplete="on" action="video.html" method="get" accept-charset="UTF-8" id="form1">
+
+        User_Name   : <input type="text" name="name" autocomplete="on" autofocus="autofocus">
+         <br>
+         <br>
+        City_Name   : <input type="text" name="city" autocomplete="on" dirname="city.dir">
+        <br>
+        <br>
+        Password    : <input type="password" name="pass">  ab ye password dono class ke liye work karega
+        <br>
+        <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+     </form>
+
+
+
+Form enctype Attribute in Form Tag:-
+
+     <form autocomplete="on" enctype="application/x-www-form-urlencoded" >
+
+        User_Name   : <input type="text" name="name" autocomplete="on" autofocus="autofocus">
+         <br>
+         <br>
+        City_Name   : <input type="text" name="city" autocomplete="on" dirname="city.dir">
+        <br>
+        <br>
+        Password    : <input type="password" name="pass">
+        <br>
+        <br>
+        Upload File : <input type="file" name="file" accept="image/*" >
+        <br>
+        <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+        <br>
+        <br>
+        Admin Submit Here : <input type="submit" name="sub" value="Submit" formenctype="multipart/form-data">  yaha par formenctype ka use kar rhe hai iss se hota ye hai ki Sumit button upload nhi karega but Adimn Submit upload button ke liiye bhi kaam karega
+     </form>
+
+
+Form method Attribute in Form Tag:-
+
+     <form autocomplete="on" method="get">
+
+        User_Name   : <input type="text" name="name" autocomplete="on" autofocus="autofocus">
+         <br>
+         <br>
+        City_Name   : <input type="text" name="city" autocomplete="on" dirname="city.dir">
+        <br>
+        <br>
+        Password    : <input type="password" name="pass">
+        <br>
+        <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+        <br>
+        <br>
+        Admin Submit Here : <input type="submit" name="sub" value="Submit" formmethod="post"> yaha pe post ka use karne se ye url pa partnhi banega means koi bhi entry url par dispaly nhi hoga
+     </form>
+
+
+
+Form tags Target Attribute :-
+
+     <form autocomplete="on" action="video.html" target="_top">
+
+        User_Name   : <input type="text" name="name" autocomplete="on" autofocus="autofocus">
+         <br>
+         <br>
+        City_Name   : <input type="text" name="city" autocomplete="on" dirname="city.dir">
+        <br>
+        <br>
+        Password    : <input type="password" name="pass">
+        <br>
+        <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+        <br>
+        <br>
+        Admin Submit Here : <input type="submit" name="sub" value="Submit" formmethod="post"> yaha pe post ka use karne se ye url pa partnhi banega means koi bhi entry url par dispaly nhi hoga
+     </form>
+
+
+
+
+Form tags Target Attribute :-
+
+     <form autocomplete="on" action="video.html" target="_blank">
+
+        User_Name   : <input type="text" name="name" autocomplete="on" autofocus="autofocus">
+         <br>
+         <br>
+        City_Name   : <input type="text" name="city" autocomplete="on" dirname="city.dir">
+        <br>
+        <br>
+        Password    : <input type="password" name="pass">
+        <br>
+        <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+        <br>
+        <br>
+        Admin Submit Here : <input type="submit" name="sub" value="Submit" formtarget="_self"> yaha pe formtarget="_self" ka use karne se ye new page me data ko dispaly nhi karta hai
+     </form>
+
+
+
+
+
+
+
+
+
+
+1) Input tag:-  In this tag does not have closing tag
+
+Input tag Attributes
+
+Attribute                   Value                  Description
+
+max                         number data
+
+maxlength                   number
+
+min                         number
+
+multiple                    multiple
+
+name                        text
+
+pattern                     regexp
+
+placeholder                 text
+
+readonly                    readonly
+
+required                    required
+
+size                        number
+
+src                         URL
+
+step                        number
+
+type
+
+value                       text
+
+width                       pixels
+
+hg                          pixels
+
+accept                      file_extension,audio/*,
+                            video/*,img/*,media type
+
+alt                         text
+
+autocomplete
+
+autofocus
+
+checked
+
+dirname
+
+disabled
+
+form
+
+formaction                  URL
+
+
+
+
+
+
+Type Attribute :- It indicates the type of Input element. It's an empty tag.
+                   default value is Text.
+
+for Ex :-  <input>
+           <input type="text">
+
+
+    <form>
+
+
+        Input Attributes :-
+
+        Name : <input type="text"> it is creata single line text where put any text
+
+
+        <form action="image.html">
+            User_Name : <input type="text" name="name">
+            <br>
+            <br>
+            Password : <input type="password" name="pass">
+            <br>
+            <br>
+            Submit Here : <input type="submit" name="sub">
+        </form>
+
+
+
+        User_Name:<input type="text">
+        <br><br>
+        Password :<input type="password">
+        <br><br>
+        <input type="button" value="Login"> This is used to add a button on a web form to activate a script when an user click the button
+
+
+
+        Delhi <input type="checkbox" name="Location" checked="checked">  Isska use hota hai jab multiple selection ka ho like mujhe job karna hai
+        Lucknow <input type="checkbox" name="Location"> yaha par name ka kaam hai ki maine kya select kiya hai ye database ke location column me store ho jayega
+        Chennai <input type="checkbox" name="Location">
+
+
+        URL Field
+        Your Website Name : <input type="text" name="Location">
+        <br>
+
+
+        <input type="color"> it is defined color
+
+        <input type="date">  it is provide date format
+
+        <input type="datetime-local">  this is provide date  with time format
+
+
+
+
+
+        Email :<input type="email">
+        Submit: <input type="submit"> this is provide email type format
+
+
+
+        Radio :- yaha par default 3 column ko select kar lega but mujhe koi ek value hi mere database me store hona chayiye isske liye name defined karna hoga
+        Male<input type="radio" name="status">
+        Female<input type="radio" name="status">
+        Other<input type="radio" name="status">
+
+
+
+
+        <input type="file">  Thi is provide a file uploadig process
+
+
+
+
+        Name :<input type="text" name="name"> yaha jab bhi user apna name enter karega to server ke pass name and country dono jayega aur database me store hoga but user ko country name nhi dikhega bcoz wo hide hai
+        <input type="hidden" name="country" value="Bharat"> ye hide kar deta hai data ko
+
+
+
+        <input type="image" src="submit">
+
+
+
+
+        <input type="month"> This is provide Month name
+
+
+
+
+        <input type="number" value="5">  This is provide numbers,value dene se number start hoga waha se jo value set ki jayegi
+
+
+
+
+
+        Password : <input type="password"> This is provide password keyword
+
+
+
+
+
+        <input type="range"> This is defined Range
+
+
+
+
+
+        <form action="image.html">
+            User_Name : <input type="text" name="name">
+            <br>
+            <br>
+            Password : <input type="password" name="pass">
+            <br>
+            <br>
+            Submit Here : <input type="submit" name="sub">
+            <input type="reset" name="re"> reset button ka use tab hota hai jab hame all column ko clean karna ho
+        </form>
+
+
+
+
+
+        <input type="search">
+
+
+
+
+
+        Tel :- tel is used one-line plain-text edit for entering a telephone number
+        <input type="tel" name="phone"> name ki wajah se phone name ke column me data store hoga database me
+
+
+
+
+
+        <input type="time">
+
+
+
+
+        <input type="url">  it is want URL
+
+
+
+
+        <input TYPE="week"> This is provide week from Year
+
+
+
+
+
+        <input type="image" src="submit" alt="Submit">
+
+
+
+
+
+        First Name :<input type="text" name="fname">  Yaha name ka kaam hai ki jo data database server ke pass jaye to database find kar paye ki kiss type ke data ko kaha par store karna hai in database me
+        <br>
+        <br>
+        Last Name :<input type="text" name="lname"> Name ki wajah se find karta hai database ki kis type ke data ko kaha par store karna hai
+        <br>
+        <br>
+
+
+
+
+
+        Value Attribute in Input Tag:-
+        Name :<input type="text" value="Abhishek kumar">
+
+    </form>
+
+
+
+
+Min & Max Attributes in Input tag :-
+
+    <form>
+
+        Number : <input type="number" min="5" max="20">  ab ye no start hoga 5 se aur 20 tab jayega
+            <br>
+            <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+    </form>
+
+
+Range Attributes in Input tag :-
+
+    <form>
+
+        Number : <input type="number" min="5" max="20">
+            <br>
+            <br>
+        Number : <input type="range" min="5" max="10">
+            <br>
+            <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+    </form>
+
+
+
+Range Attributes For Age Defined in Input tag :-
+
+    <form>
+
+        Number : <input type="number" min="5" max="20">
+            <br>
+            <br>
+        Number : <input type="range" min="5" max="10">
+            <br>
+            <br>
+
+        Date : <input type="date" min="2000-01-01" max="2021-01-01"> ye age ko defined karega
+            <br>
+            <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+    </form>
+
+
+
+
+Minlength & Maxlength Attributes :-
+
+    <form method="get">
+
+        User_Name : <input type="text" maxlength="10" autocomplete="on">
+            <br>
+            <br>
+        Password : <input type="password" minlength="5" maxlength="15">
+            <br>
+            <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+    </form>
+
+
+Size Attributes :-
+
+    <form>
+
+        User_Name : <input type="text" autocomplete="on" size="20"> size defined karne se name ka box size bara ho jata hai
+            <br>
+            <br>
+        Password : <input type="password">
+            <br>
+            <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+    </form>
+
+Placeholder Attributes :-
+
+    <form>
+
+        User_Name : <input type="text" autocomplete="on" placeholder="Enter Your Name..."> placeholder defined karne se name ka box me by default placeholder value show hoga
+            <br>
+            <br>
+        Password : <input type="password">
+            <br>
+            <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+
+    </form>
+
+
+
+ReadOnly Attributes in type:-
+
+    <form>
+
+        User_Name : <input type="text" name="fname" value="Abhishek Aryan" readonly> readonly dene se name me koi entry nhi hogi, isska use basically check box defined karte time kar skte hai
+            <br>
+            <br>
+        Password : <input type="password">
+            <br>
+            <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+
+    </form>
+
+
+ReadOnly Attributes in type:-
+
+    <form>
+
+
+        Yes : <input type="radio" name="other">
+            <br>
+            <br>
+        No : <input type="radio" name="other">
+            <br>
+            <br>
+        User_Name : <input type="text" name="fname" value="Abhishek Aryan" readonly>
+        <br>
+            <br>
+        Submit Here : <input type="submit" name="sub" value="Submit">
+
+    </form>
+
+
+Multiple Attributes in type :-
+
+    <form>
+
+        User_Name : <input type="email" name="email" multiple> Multiple ka use tab karte hai jab hamko email data ya File data ke sath kaam karna ho
+        Submit Here : <input type="submit" name="sub" value="Submit">
+<br>
+        <br>
+
+        User_Name : <input type="file" name="file" multiple> Multiple ka use tab karte hai jab hamko email data ya File data ke sath kaam karna ho
+        Submit Here : <input type="submit" name="sub" value="Submit">
+    </form>
+
+
+
+Step Attributes:-
+
+    <form>
+
+        User_Name : <input type="number" name="number" step="5"> setp ka use min and max par bhi kar skte hai..step 5 dene se ye 5,10,15 ese display hoga
+        Submit Here : <input type="submit" name="sub" value="Submit">
+
+    </form>
+
+
+
+Pattern Attributes:-
+
+    <form>
+
+        User_Name : <input type="text" pattern="^[a-z]+$"> pattern ka kaam hota hai, ki jis format me data ko ham log code karte hai like alphabates , or num ,usi format me entry kiya ja skta hai
+        Submit Here : <input type="submit" name="sub" value="Submit">
+
+    </form>
+
+
+
+Title Attributes:-
+
+    <form>
+
+        User_Name : <input type="text" pattern="^[a-z]+$" title="Example : abcde">
+        Submit Here : <input type="submit" name="sub" value="Submit">
+
+    </form>
+
+
+        <form>
+            <textarea wrap="hard" rows="5" cols="25"> textarea me wrap by default soft hi hota hai, but wrap ko jab hard karte hai to jab data server ke pass jata hai tab server usko New Line me likhta hai , wrap soft me server new line me nhi likhta hai
+
+            </textarea>
+        </form>
+        -->
+        <form>
+            Male<input type="radio" name="status">
+        </form>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                Frame Method
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frame Method</title>
+</head>
+<body>
+
+<iframe src="https://www.newsnationtv.com/newsstate-hindi-live-tv" height="300" width="500">
+
+</iframe>
+
+
+<iframe src="http://localhost:63342/PyCharm_Project/target.html?_ijt=gju96qs4906rnvasq0unutbdao" height="300" width="500" sandbox=>  yaha pe jab sandboxme value nhi dete hai tab web page par banaya gya click button work nhi karta hai click button ke work karne ke liye jaruri hai ki Sandbox ki value  diya jaye
+
+</iframe>
+
+
+<iframe src="http://www.geekyshows.com" height="300" width="500" sandbox="allow-same-origin">
+
+</iframe>
+
+
+<iframe src="https://www.geekyshows.com" height="300" width="500" sandbox="allow-forms">
+
+</iframe>
+
+
+<iframe src="linkcolor.html" height="300" width="500" sandbox="allow-same-origin allow-pointer-lock">
+
+</iframe>
+
+
+
+<iframe src="target.html" height="300" width="500" sandbox="allow-same-origin allow-popups">
+
+</iframe>
+
+
+
+
+<iframe src="javascript.html" height="300" width="500" sandbox="allow-same-origin allow-scripts">
+
+</iframe>
+
+
+<iframe name="frame5" id="frame5" >  isska use rel.html me ho rha hai frame5 ko target me set karne se ye new page create karta hai rel.html me
+</iframe>
+
+
+Nested Frame :-- This is used in Nested_Frame.html
+    <h2>Frame 2</h2>
+        <iframe src="rel.html" height="800" width="1000">
+
+        </iframe>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                HREF ATTRIBUTES
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>href_attribute</title>
+</head>
+<body>
+
+    <a href="#imp">Important</a>
+    <!-- something wrrong message are print-->  Isska effect web page par nhi  hoga
+    <p>
+    Google was founded in September 1998 by Larry Page and Sergey Brin while they were Ph.D.<br>
+        students at Stanford University in California. Together they own about 14 percent of its shares<br>
+        and control 56 percent of the stockholder voting power through supervoting stock. They incorporated Google<br>
+        as a California privately held company on September 4, 1998, in California.Google was founded in September<br>
+        1998 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University in California.<br>
+        Together they own about 14 percent of its shares and control 56 percent of the stockholder voting power<br>
+        through supervoting stock. They incorporated Google as a California privately held company on September 4,<br>
+        1998, in California.<br>
+
+
+    <!--   Ye ek type ka comment hai like single qoutes or duable qoutes
+    </p>
+
+    <h3 id="imp">
+        Poetry (derived from the Greek poiesis, "making") is a form of literature that uses aesthetic and<br>
+        often rhythmic[1][2][3] qualities of language—such as phonaesthetics, sound symbolism, and metre—to evoke meanings<br>
+        in addition to, or in place of, the prosaic ostensible meaning.<br>
+
+    </h3>
+
+
+    -->
+    <p>
+
+        The company's rapid growth since incorporation has triggered a chain of products, acquisitions,<br>
+        and partnerships beyond Google's core search engine (Google Search). It offers services designed<br>
+        for work and productivity (Google Docs, Google Sheets, and Google Slides), email (Gmail), scheduling<br>
+        and time management (Google Calendar), cloud storage (Google Drive), instant messaging and video chat<br>
+        (Duo, Hangouts, Chat, and Meet), language translation (Google Translate), mapping and navigation<br>
+        (Google Maps, Waze, Google Earth, and Street View), podcast hosting (Google Podcasts), video sharing<br>
+        (YouTube), blog publishing (Blogger), note-taking (Google Keep and Google Jamboard), and photo organizing<br>
+        and editing (Google Photos). The company leads the development of the Android mobile operating system,<br>
+        the Google Chrome web browser, and Chrome OS, a lightweight operating system based on the Chrome browser.<br>
+        Google has moved increasingly into hardware; from 2010 to 2015, it partnered with major electronics<br>
+        manufacturers in the production of its Nexus devices, and it released multiple hardware products in October<br>
+        2016, including the Google Pixel line of smartphones, Google Home smart speaker, Google Wifi mesh wireless<br>
+        router, and Google Daydream virtual reality headset. Google has also experimented with becoming an Internet<br>
+        carrier (Google Fiber, Google Fi, and Google Station).[13]<br>
+
+        Google.com is the most visited website worldwide. Several other Google-owned websites also are<br>
+        on the list of most popular websites, including YouTube and Blogger.<br>
+
+
+
+    </p>
+
+    <p id="top">
+        Early poems in the Eurasian continent evolved from folk songs such as the Chinese Shijing; or from a need to retell<br>
+        oral epics, as with the Sanskrit Vedas, the Zoroastrian Gathas, and the Homeric epics, the Iliad and the Odyssey.<br>
+        Ancient Greek attempts to define poetry, such as Aristotle's Poetics, focused on the uses of speech in rhetoric,<br>
+        drama, song, and comedy. Later attempts concentrated on features such as repetition, verse form, and rhyme, and<br>
+        emphasized the aesthetics which distinguish poetry from more objectively-informative prosaic writing.<br>
+
+        Poetry uses forms and conventions to suggest differential interpretations of words, or to evoke emotive responses.<br>
+        Devices such as assonance, alliteration, onomatopoeia, and rhythm may convey musical or incantatory effects. The use<br>
+        of ambiguity, symbolism, irony, and other stylistic elements of poetic diction often leaves a poem open to multiple<br>
+        interpretations. Similarly, figures of speech such as metaphor, simile, and metonymy[5] establish a resonance between<br>
+        otherwise disparate images—a layering of meanings, forming connections previously not perceived. Kindred forms of<br>
+        resonance may exist, between individual verses, in their patterns of rhyme or rhythm.<br>
+
+    </p>
+
+    <p>
+        Some poetry types are unique to particular cultures and genres and respond to characteristics of the language<br>
+        in which the poet writes. Readers accustomed to identifying poetry with Dante, Goethe, Mickiewicz, or Rumi may<br>
+        think of it as written in lines based on rhyme and regular meter. There are, however, traditions, such as Biblical<br>
+        poetry, that use other means to create rhythm and euphony. Much modern poetry reflects a critique of poetic<br>
+        tradition,[6] testing the principle of euphony itself or altogether forgoing rhyme or set rhythm.[7][8] In an<br>
+        increasingly globalized world, poets often adapt forms, styles, and techniques from diverse cultures and languages.<br>
+
+        A Western cultural tradition (which extends at least from Homer to Rilke) associates the production of poetry<br>
+        with inspiration – often by a Muse (either classical or contemporary).<br>
+    </p>
+
+    <a href="#top">Go To Top</a>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                   Image Method
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image</title>
+</head>
+<body>
+
+    <img src="C:\Users\annaa\PycharmProjects\OCR_Project\Meter.png" alt="Meter">
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                               Map Image
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map Image</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            JAVA SCRIPT Attributes
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JAVA SCRIPT Attributes</title>
+</head>
+<body>
+
+    <a href="javascript:alert('Hello Python');">Click Me</a>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            Labels Tag Method
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Labels Tag</title>
+    </head>
+    <body>
+
+    <!--
+    It is defined of that is associated with a particular element.
+
+
+        <label>Male:<input text="radio" name="status"></label>
+
+    label ka benefit ye hota hai ki ok box me click karo ya male,or female name par click karo wo call kar lega
+
+        <label>Female:<input text="radio" name="status"></label>
+
+
+
+For Attribute in label :-
+
+        <label for="male">Male</label>
+            <input text="radio" name="status" id="male">
+<br>
+    <br>
+        <label for="female">Female</label>
+            <input text="radio" name="status" id="female">
+
+               -->
+
+    <form>
+        Male : <input type="radio" name="radio">
+        Female :<input type="radio" name="radio">
+    </form>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                Link Color Method
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Link Color</title>
+</head>
+<body link="orange" vlink="yellow" alink="blue">
+    <a href="href.html" target="_blank">Link1</a><br><br>
+        <a href="media.html" target="_blank">Link2</a><br><br>
+    <a href="rel.html" target="_blank">Link3</a>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            Media Attributes Method
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Attributes</title>
+</head>
+<body>
+    <a hreflang="en" href="help.html">Hello Abhishek</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            Nested Frame Method
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nested Frame 3</title>
+</head>
+<body>
+    <iframe src="frame.html" height="300" width="600">  Nested Frame ka kaam hota hai ek hi frame pe dusre frame ko show karna
+
+    </iframe>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            Object & Param Tag Method
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object & Param Tag</title>
+</head>
+<body>
+<!--
+The Object tag is used to embeded object withoin HTML
+for Ex :- Audio,Video, Java applets, Flash, PDF etc.
+1) Text b/w <object> and </object> is an alternate text for browser that do not support this tag.
+
+<param> tag is used to pass parameter to plugins that have embeded with <object> tag
+<param> tag is always used inside <object> tag
+
+Attribute                  Value                              Description
+
+Data                        URL
+type                     Media type
+Name                        Name                              Specifies the Name of the object
+Usemap                   #mapname                             Specifies the name of the client-side image map to be used with the object
+Form                     form_id                              Specifies one or more than form th object belongs to
+Width                     Pixel
+Height                    Pixel
+
+
+    <h1> Object Tag </h1>
+
+    <object height="300" width="500" data="peng.swf" type="application/x-shockwave-flash">
+     No Display
+    </object>
+
+
+    <h1> Object Tag </h1>
+
+    <object height="300" width="500" data="http://www.geekyshows.com">
+
+    </object>
+-->
+
+
+    <h1> Object Tag </h1>
+
+    <object data="Weekend.mp4">
+        <param name="width" value="600">
+
+    </object>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            PyCharm_HTML_Project
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PyCharm_HTML_Project</title>
+    <h1>This is Abhishek Kumar & this is an Python Softwar Engineer whose working on Pratikshat Solution LLP</h1>
+    <h2>This is Abhishek Kumar & this is an Python Softwar Engineer whose working on Pratikshat Solution LLP</h2>
+    <h3>This is Abhishek Kumar & this is an Python Softwar Engineer whose working on Pratikshat Solution LLP</h3>
+    <h4>This is Abhishek Kumar & this is an Python Softwar Engineer whose working on Pratikshat Solution LLP</h4>
+    <h5>This is Abhishek Kumar & this is an Python Softwar Engineer whose working on Pratikshat Solution LLP</h5>
+    <h6>This is Abhishek Kumar & this is an Python Softwar Engineer whose working on Pratikshat Solution LLP</h6>
+
+    <meta name="description" content="This web page are made by Abhishek Kumar">
+    <meta name="keyword" content="HTML,JAVA,PYTHON">
+    <meta name="author" content="Abhishek Kumar">
+    <meta http-equiv="refresh" content="10">
+
+</head>
+
+<body>
+<h1 align="center"> <b> BSES Rajdhani Power Corporation Limited </b>  </h1>     Heading, h1 is largest Font size & h6 is smallest Font size
+
+
+    <br>    This is use to create New Line or Next Line & when i used double br , br then it is more New Lines
+    <br>
+
+
+    <h2 align="center"> <i> <b> Electric Bill Details </b> </i> </h2>       /b> This is an a Bold Function whoich is to bold any character or paragraph
+    align --> is a used to maintained sides where we maintaining own paragraps
+    i> this is an Italic character which is used to modify own paragraph or character as an Italic Type, Italic.. Italic and Bold Function are
+    used both together
+
+
+
+    <hr>This is Abhishek Kumar & this is an Python Softwar Engineer whose working on Pratikshat Solution LLP</hr>
+    Abhishek<sup>Kumar</sup><hr>        subscript
+    Abhishek<sub>Kumar</sub>            superscript
+    <h2 align="center"> Electric Bill Details </h2>
+    <h2 align="left"> Electric Bill Details </h2>
+    <h2 align="right"> Electric Bill Details </h2>
+    <h1> <strong> BSES Rajdhani Power Corporation Limited </strong> </h1>
+    <h1> <em> BSES Rajdhani Power Corporation Limited </em> </h1>
+    <i> BSES Rajdhani Power Corporation Limited </i>
+    <blockquote>This is Abhishek Kumar & this is an Python Softwar Engineer whose working on Pratikshat Solution LLP</blockquote>
+    <q> This is Abhishek Kumar & this is an Python Softwar Engineer whose working on Pratikshat Solution LLP </q>
+    <abbr title="Abhishek Kumar"> Abhi </abbr> is Awesome
+    <address> Abhishek kumar home are located on Lucknow </address>
+    <del>abhis</del>
+    <br>
+    <ins>abhishek</ins>
+    <s> abhishek</s>   This is wrong, bcoz don't give space b/w tag and character
+    <s>abhishek</s>     This is correct
+
+    <ul>   Unordered List
+        <li> Company </li>
+        <li>A boring place</li>
+        <li> Library </li>
+        <li>A much learn this place</li>
+        <li> Railway Station </li>
+    </ul>
+
+
+    <ol>  Ordered List
+        <li> Company </li>
+        <li>A boring place</li>
+        <li> Library </li>
+        <li>A much learn this place</li>
+        <li> Railway Station </li>
+    </ol>
+
+    <ol type="1">  Ordered List
+        <li> Company </li>
+        <li>A boring place</li>
+        <li> Library </li>
+        <li>A much learn this place</li>
+        <li> Railway Station </li>
+    </ol>
+
+    <ol type="i">  Ordered List
+        <li> Company </li>
+        <li>A boring place</li>
+        <li> Library </li>
+        <li>A much learn this place</li>
+        <li> Railway Station </li>
+    </ol>
+
+    <ol reversed='reversed'>  Ordered List
+        <li> Company </li>
+        <li>A boring place</li>
+        <li> Library </li>
+        <li>A much learn this place</li>
+        <li> Railway Station </li>
+    </ol>
+
+    <ol type="A" reversed>  Ordered List
+        <li> Company </li>
+        <li>A boring place</li>
+        <li> Library </li>
+        <li>A much learn this place</li>
+        <li> Railway Station </li>
+    </ol>
+
+
+    <dl>   Definition List
+        <dt>Company</dt>  This is term
+        <dd>boring place</dd>   This is Definition
+        <dt>Library </dt>
+        <dd>learn this place</dd>
+        <dt>Railway Station</dt>
+        <dd>croweded</dd>
+    </dl>
+
+
+    <ul>   Unordered Nested List
+
+        <li>Window</li>
+            <ul>   Unordered List
+                <li>Window 7</li>
+                <li>Window 10</li>
+            </ul>
+        <li>Linex</li>
+            <ul>   Unordered List
+                <li>Kali Linex</li>
+                <li>Ubuntu</li>
+            </ul>
+        <li>Mac</li>
+        <li>Android</li>
+
+    </ul>
+
+
+
+    <ol>   Ordered Nested List
+
+        <li>Window</li>
+            <ol>   Unordered List
+                <li>Window 7</li>
+                <li>Window 10</li>
+            </ol>
+        <li>Linex</li>
+            <ol>   Unordered List
+                <li>Kali Linex</li>
+                <li>Ubuntu</li>
+            </ol>
+        <li>Mac</li>
+        <li>Android</li>
+
+    </ol>
+
+
+<table border="1" align="center">   border dene par table ka data box me insert ho gata hai, align ki help se table center me display hoga ya left or right me
+
+    <th>Employee_ID</th>
+    <th>Employee_Name</th>
+    <th>Employee_Position</th>
+
+    <tr>    tr ke through Rows create hota hai
+        <td>141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr>
+        <td>141031807</td>     td is used to insert data inside table
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr>
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+How to Align table content into left or right or center than we need to go th and defined align, and if i want to need Align on Roms than we want to go tr function and where defined Align
+
+<table border="1" align="center">
+
+    <th align="left">Employee_ID</th>
+    <th>Employee_Name</th>
+    <th>Employee_Position</th>
+
+    <tr align="center">    tr ke through Rows create hota hai
+        <td>141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="left">
+        <td>141031807</td>     td is used to insert data inside table
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="right">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+
+<table border="1" align="center">
+
+    <th align="center">Employee_ID</th>
+    <th>Employee_Name</th>
+    <th>Employee_Position</th>
+
+    <tr align="center">    tr ke through Rows create hota hai
+        <td>141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>     td is used to insert data inside table
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+
+<table border="1" align="center" width="60%">    width is used to maintained shape of the borber line
+
+    <th align="center" width="50%">Employee_ID</th>
+    <th>Employee_Name</th>
+    <th>Employee_Position</th>
+
+    <tr align="center">    tr ke through Rows create hota hai
+        <td>141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>     td is used to insert data inside table
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+
+How to defined color on table :-
+<br>
+<table border="1" align="center" width="60%" bgcolor="orange">
+
+    <th align="center" width="50%">Employee_ID</th>
+    <th>Employee_Name</th>
+    <th>Employee_Position</th>
+
+    <tr align="center">    tr ke through Rows create hota hai
+        <td>141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>     td is used to insert data inside table
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+<br>
+<br>
+
+how to defined color on ROWS & also defined any one content from Rows :-
+
+<table border="1" align="center" width="60%">
+
+    <th align="center" width="50%" bgcolor="sky blue">Employee_ID</th>
+    <th>Employee_Name</th>
+    <th>Employee_Position</th>
+
+    <tr align="center" bgcolor="pink">    tr ke through Rows me color defined hota hai
+
+        <td bgcolor="yellow">141031806</td>    td ke through rows ki particular content ka color defined hota hai
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>     td is used to insert data inside table
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+<table border="1" align="center" width="60%" cellspacing="5">  cell spacing are maintained space b/w one cell to another
+
+    <th align="center" width="50%" bgcolor="sky blue">Employee_ID</th>
+    <th>Employee_Name</th>
+    <th>Employee_Position</th>
+
+    <tr align="center" bgcolor="pink">
+
+        <td bgcolor="yellow">141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+<table border="1" align="center" width="60%">
+
+    <th align="center" width="50%" bgcolor="sky blue" rowspan="4">Employee_ID  Employee_Name   Employee_Position</th>
+
+    <tr align="center" bgcolor="pink">
+        <td bgcolor="yellow">141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center" aria-rowspan="3">    Row Spanning
+        <td>141031808 Avinash  ROR</td>
+
+    </tr>
+
+</table>
+
+
+Spanning Column using th function
+<table border="1" align="center" width="60%">
+
+    <th colspan="3" width="50%" bgcolor="sky blue" rowspan="4">Employee_Details</th>     colspan using for merge cell
+
+    <tr align="center" bgcolor="pink">
+        <td bgcolor="yellow">141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+Spanning Column using td function
+<table border="1" align="center" width="60%">
+
+    <th colspan="3" width="50%" bgcolor="sky blue" rowspan="4">Employee_Details</th>
+
+    <tr align="center" bgcolor="pink">
+        <td bgcolor="yellow">141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>   colspan using for merge cell
+        <td colspan="2">Aryan</td>
+
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+
+Nested Table :--
+<table border="1" align="center" width="60%">
+
+    <th colspan="3" width="50%" bgcolor="sky blue" rowspan="4">Employee_Details</th>
+
+    <tr align="center" bgcolor="pink">
+        <td bgcolor="yellow">First_Name & Last_Name
+            <table>
+                <tr bgcolor="orange" align="center">
+                    <td bgcolor="pink" align="center">Abhishek</td>
+
+                    <td bgcolor="pink" align="center">Aryan</td>
+                </tr>
+
+                <tr bgcolor="orange" align="center">
+                    <td bgcolor="dark blue" align="center">Priya</td>
+                    <td bgcolor="red" align="center">Singh</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>   colspan using for merge cell
+        <td colspan="2">Aryan</td>
+
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+Anchor Tag
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                Help HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help HTML</title>
+</head>
+<body>
+<a target="_blank" hreflang="en" href="href.html">Click On</a>  target set as a _blank,ye data ko display karne ke liye new page create karta hai
+
+<table border="1" align="center" width="60%">
+
+    <th colspan="3" width="50%" bgcolor="sky blue" rowspan="4">Employee_Details</th>     colspan using for merge cell
+
+    <tr align="center" bgcolor="pink">
+        <td bgcolor="yellow">141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+<a target="_parent" hreflang="en" href="href.html">Click On</a>
+
+<table border="1" align="center" width="60%">
+
+    <th colspan="3" width="50%" bgcolor="sky blue" rowspan="4">Employee_Details</th>     target set as a _parent,ye new page nhi create karta hai balki usi page pe data ko display kar deta hai
+
+    <tr align="center" bgcolor="pink">
+        <td bgcolor="yellow">141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+<a target="_self" hreflang="en" href="href.html">Click On</a>
+
+<table border="1" align="center" width="60%">
+
+    <th colspan="3" width="50%" bgcolor="sky blue" rowspan="4">Employee_Details</th>     target set as a _self,ye new page nhi create karta hai balki usi page pe data ko display kar deta hai
+
+    <tr align="center" bgcolor="pink">
+        <td bgcolor="yellow">141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+<a target="_top" hreflang="en" href="href.html">Click On</a>
+
+<table border="1" align="center" width="60%">
+
+    <th colspan="3" width="50%" bgcolor="sky blue" rowspan="4">Employee_Details</th>     target set as a _top,ye new page nhi create karta hai balki usi page pe data ko display kar deta hai
+
+    <tr align="center" bgcolor="pink">
+        <td bgcolor="yellow">141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+
+<a target="frame5" hreflang="en" href="href.html">Click On</a>
+
+<table border="1" align="center" width="60%">
+
+    <th colspan="3" width="50%" bgcolor="sky blue" rowspan="4">Employee_Details</th>     target set as a user defined ,ye new page me data ko display kar deta hai
+
+    <tr align="center" bgcolor="pink">
+        <td bgcolor="yellow">141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                Select Tag
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Select Tag</title>
+    </head>
+    <body>
+    <!--
+    Option Tag :- This tags is used inside the <select>tag elemeny
+    defined an option in the drop down list
+
+        <form>
+            Name :<input type="text" name="name">
+            <br> <br>
+            Employee_Detail<select autofocus name="Employee">
+                <option value="None">None</option>
+                <option value="Python">Python</option>   Server ke pass keval value me jo data likha jata hai wahi server ke pass jata hai
+                <option value="Java">Java</option>
+                <option value="ROR">ROR</option>
+                <option value="Perl">Perl</option>
+                <option value="DotNet">DotNet</option>
+                <option value="Angular JS">Angular JS</option>
+            </select>
+            <br><br>
+            <input type="submit" name="submit">
+        </form>
+
+
+
+# Selected
+        <form>
+            Name :<input type="text" name="name">
+            <br> <br>
+            Employee_Detail<select autofocus name="Employee">
+                <option value="None">None</option>
+                <option value="Python">Python</option>   Server ke pass keval value me jo data likha jata hai wahi server ke pass jata hai
+                <option value="Java">Java</option>
+                <option value="ROR" selected>ROR</option>
+                <option value="Perl">Perl</option>
+                <option value="DotNet">DotNet</option>
+                <option value="Angular JS">Angular JS</option>
+            </select>
+            <br><br>
+            <input type="submit" name="submit">
+        </form>
+
+
+
+
+
+
+
+# Disable
+        <form>
+            Name :<input type="text" name="name" disabled>
+            <br> <br>
+            Employee_Detail<select autofocus name="Employee">
+                <option value="None">None</option>
+                <option value="Python">Python</option>   Server ke pass keval value me jo data likha jata hai wahi server ke pass jata hai
+                <option value="Java">Java</option>
+                <option value="ROR">ROR</option>
+                <option value="Perl">Perl</option>
+                <option value="DotNet">DotNet</option>
+                <option value="Angular JS">Angular JS</option>
+            </select>
+            <br><br>
+            <input type="submit" name="submit">
+        </form>
+
+        <form>
+            Name :<input type="text" name="name">
+            <br> <br>
+            Employee_Detail<select autofocus name="Employee">
+                <option value="None">None</option>
+                <option value="Python">Python</option>   Server ke pass keval value me jo data likha jata hai wahi server ke pass jata hai
+                <option value="Java">Java</option>
+                <option value="ROR" disabled>ROR</option>   disable
+                <option value="Perl">Perl</option>
+                <option value="DotNet">DotNet</option>
+                <option value="Angular JS">Angular JS</option>
+            </select>
+            <br><br>
+            <input type="submit" name="submit">
+        </form>
+
+
+
+
+
+
+
+#Label
+
+        <form>
+            Name :<input type="text" name="name">
+            <br> <br>
+            Employee_Detail<select autofocus name="Employee">
+
+                <option label="Python">Python Developer</option> label dene se USER KO Python Developer dikhega
+
+            </select>
+            <br><br>
+            <input type="submit" name="submit">
+        </form>
+
+            -->
+
+
+
+
+
+
+# Optgroup Tag :-
+
+
+        <form>
+            Name :<input type="text" name="name">
+            <br> <br>
+            Employee_Detail<select autofocus name="Employee">
+                <optgroup label="Programming">
+                <option value="None">None</option>
+                <option value="Python">Python</option>   Server ke pass keval value me jo data likha jata hai wahi server ke pass jata hai
+                <option value="Java">Java</option>
+                <option value="ROR">ROR</option>
+                </optgroup>
+                <optgroup label="Web Programming">
+                <option value="Perl">Python-Django</option>
+                <option value="DotNet">DotNet</option>
+                <option value="Angular JS">Angular JS</option>
+                <optgroup>
+            </select>
+            <br><br>
+            <input type="submit" name="submit">
+        </form>
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Select Tag</title>
+    </head>
+    <body>
+    <!--
+    Option Tag :- This tags is used inside the <select>tag elemeny
+    defined an option in the drop down list
+
+        <form>
+            Name :<input type="text" name="name">
+            <br> <br>
+            Employee_Detail<select autofocus name="Employee">
+                <option value="None">None</option>
+                <option value="Python">Python</option>   Server ke pass keval value me jo data likha jata hai wahi server ke pass jata hai
+                <option value="Java">Java</option>
+                <option value="ROR">ROR</option>
+                <option value="Perl">Perl</option>
+                <option value="DotNet">DotNet</option>
+                <option value="Angular JS">Angular JS</option>
+            </select>
+            <br><br>
+            <input type="submit" name="submit">
+        </form>
+
+
+
+# Selected
+        <form>
+            Name :<input type="text" name="name">
+            <br> <br>
+            Employee_Detail<select autofocus name="Employee">
+                <option value="None">None</option>
+                <option value="Python">Python</option>   Server ke pass keval value me jo data likha jata hai wahi server ke pass jata hai
+                <option value="Java">Java</option>
+                <option value="ROR" selected>ROR</option>
+                <option value="Perl">Perl</option>
+                <option value="DotNet">DotNet</option>
+                <option value="Angular JS">Angular JS</option>
+            </select>
+            <br><br>
+            <input type="submit" name="submit">
+        </form>
+
+
+
+
+
+
+
+# Disable
+        <form>
+            Name :<input type="text" name="name" disabled>
+            <br> <br>
+            Employee_Detail<select autofocus name="Employee">
+                <option value="None">None</option>
+                <option value="Python">Python</option>   Server ke pass keval value me jo data likha jata hai wahi server ke pass jata hai
+                <option value="Java">Java</option>
+                <option value="ROR">ROR</option>
+                <option value="Perl">Perl</option>
+                <option value="DotNet">DotNet</option>
+                <option value="Angular JS">Angular JS</option>
+            </select>
+            <br><br>
+            <input type="submit" name="submit">
+        </form>
+
+        <form>
+            Name :<input type="text" name="name">
+            <br> <br>
+            Employee_Detail<select autofocus name="Employee">
+                <option value="None">None</option>
+                <option value="Python">Python</option>   Server ke pass keval value me jo data likha jata hai wahi server ke pass jata hai
+                <option value="Java">Java</option>
+                <option value="ROR" disabled>ROR</option>   disable
+                <option value="Perl">Perl</option>
+                <option value="DotNet">DotNet</option>
+                <option value="Angular JS">Angular JS</option>
+            </select>
+            <br><br>
+            <input type="submit" name="submit">
+        </form>
+
+
+
+
+
+
+
+#Label
+
+        <form>
+            Name :<input type="text" name="name">
+            <br> <br>
+            Employee_Detail<select autofocus name="Employee">
+
+                <option label="Python">Python Developer</option> label dene se USER KO Python Developer dikhega
+
+            </select>
+            <br><br>
+            <input type="submit" name="submit">
+        </form>
+
+            -->
+
+
+
+
+
+
+# Optgroup Tag :-
+
+
+        <form>
+            Name :<input type="text" name="name">
+            <br> <br>
+            Employee_Detail<select autofocus name="Employee">
+                <optgroup label="Programming">
+                <option value="None">None</option>
+                <option value="Python">Python</option>   Server ke pass keval value me jo data likha jata hai wahi server ke pass jata hai
+                <option value="Java">Java</option>
+                <option value="ROR">ROR</option>
+                </optgroup>
+                <optgroup label="Web Programming">
+                <option value="Perl">Python-Django</option>
+                <option value="DotNet">DotNet</option>
+                <option value="Angular JS">Angular JS</option>
+                <optgroup>
+            </select>
+            <br><br>
+            <input type="submit" name="submit">
+        </form>
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                 Source Data
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Source Data</title>
+</head>
+<body>
+    <h1>
+        Source Tags
+    </h1>
+
+    <audio controls="controls">
+
+        <source src="Adhaaru.wav" type="audio/wav">
+        <source src="Adhaaru.mp3" type="audio/mp3">
+
+    </audio>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    Target Attributes
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Target Attributes</title>
+</head>
+<body>
+
+    <a href="href.html">Click On</a>   Target attributes are use to call another html file on the target file
+                                        which means when i want to used other file on my current file then we used to this target method
+                                        but this method are opened some web page but if you want to display these content on new page than you used target (_blank keyword)
+
+    <a href="href.html" target="_blank">Click On</a>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            Text Attribute
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Text Attribute</title>
+    </head>
+    <body>
+        <form>
+            <!--
+                A Text are is a multiline text Field. A user write unlimited num of character in  the text area.
+                Syntex :- <textarea></textarea>
+                -->
+            <textarea rows="5" cols="30">   Yaha par by default 2 rows hote hai aur 20 column hote hai, jab tak manually col or row ki value defiend na kare
+
+            </textarea>
+        </form>
+
+        <form>
+            <textarea wrap="hard" rows="5" cols="25"> textarea me wrap by default soft hi hota hai, but wrap ko jab hard karte hai to jab data server ke pass jata hai tab server usko New Line me likhta hai , wrap soft me server new line me nhi likhta hai
+
+            </textarea>
+        </form>
+
+    </body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Text Attribute</title>
+    </head>
+    <body>
+        <form>
+            <!--
+                A Text are is a multiline text Field. A user write unlimited num of character in  the text area.
+                Syntex :- <textarea></textarea>
+                -->
+            <textarea rows="5" cols="30">   Yaha par by default 2 rows hote hai aur 20 column hote hai, jab tak manually col or row ki value defiend na kare
+
+            </textarea>
+        </form>
+
+        <form>
+            <textarea wrap="hard" rows="5" cols="25"> textarea me wrap by default soft hi hota hai, but wrap ko jab hard karte hai to jab data server ke pass jata hai tab server usko New Line me likhta hai , wrap soft me server new line me nhi likhta hai
+
+            </textarea>
+        </form>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            Type Attributes
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Type Attributes</title>
+</head>
+<body>
+    <a hreflang="en" href="text.html" type="text/html">Type Attributes</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                Video Music
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Music</title>
+</head>
+<body>
+    <!--
+    <video controls="controls" autoplay="autoplay" muted="muted" height="300" width="500" preload="metadata" loop="loop" src="Weekend.mp4"></video>
+
+    <video controls="controls" autoplay="autoplay" muted="muted" height="300" width="500" preload="none" loop="loop" src="Weekend.mp4"></video>
+    -->
+
+    <video controls="controls" autoplay="autoplay" height="300" width="500" preload="auto" poster="abhi.jpg" loop="loop" src="Bad.webm" src="Weekend.webm" src="Yalla.webm" src="Amazing.webm" src="Sugar.webm"></video>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    REL Method
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help HTML</title>
+</head>
+<body>
+<a target="_blank" hreflang="en" href="href.html">Click On</a>  target set as a _blank,ye data ko display karne ke liye new page create karta hai
+
+<table border="1" align="center" width="60%">
+
+    <th colspan="3" width="50%" bgcolor="sky blue" rowspan="4">Employee_Details</th>     colspan using for merge cell
+
+    <tr align="center" bgcolor="pink">
+        <td bgcolor="yellow">141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+<a target="_parent" hreflang="en" href="href.html">Click On</a>
+
+<table border="1" align="center" width="60%">
+
+    <th colspan="3" width="50%" bgcolor="sky blue" rowspan="4">Employee_Details</th>     target set as a _parent,ye new page nhi create karta hai balki usi page pe data ko display kar deta hai
+
+    <tr align="center" bgcolor="pink">
+        <td bgcolor="yellow">141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+<a target="_self" hreflang="en" href="href.html">Click On</a>
+
+<table border="1" align="center" width="60%">
+
+    <th colspan="3" width="50%" bgcolor="sky blue" rowspan="4">Employee_Details</th>     target set as a _self,ye new page nhi create karta hai balki usi page pe data ko display kar deta hai
+
+    <tr align="center" bgcolor="pink">
+        <td bgcolor="yellow">141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+<a target="_top" hreflang="en" href="href.html">Click On</a>
+
+<table border="1" align="center" width="60%">
+
+    <th colspan="3" width="50%" bgcolor="sky blue" rowspan="4">Employee_Details</th>     target set as a _top,ye new page nhi create karta hai balki usi page pe data ko display kar deta hai
+
+    <tr align="center" bgcolor="pink">
+        <td bgcolor="yellow">141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+
+<a target="frame5" hreflang="en" href="href.html">Click On</a>
+
+<table border="1" align="center" width="60%">
+
+    <th colspan="3" width="50%" bgcolor="sky blue" rowspan="4">Employee_Details</th>     target set as a user defined ,ye new page me data ko display kar deta hai
+
+    <tr align="center" bgcolor="pink">
+        <td bgcolor="yellow">141031806</td>
+        <td>Abhishek</td>
+        <td>Python-Django</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031807</td>
+        <td>Aryan</td>
+        <td>SAP-ABAP</td>
+
+    </tr>
+
+    <tr align="center">
+        <td>141031808</td>
+        <td>Avinash</td>
+        <td>ROR</td>
+
+    </tr>
+
+</table>
+
+
+</body>
+</html>
+
+
+
+
+
+
+import mysql.connector
+from mysql.connector import Error
+
+def convertToBinaryData(filename):  # For MySQL where image are upload
+    # Convert digital data to binary format
+    with open(filename, 'rb') as file:
+        binaryData = file.read()
+    return binaryData
+
+
+def insertBLOB(Meter, Due_Date, CA_No, Bill_Amount, biodataFile):   # For MySQL where image are upload
+    print("Inserting BLOB into Image_details table")
+    try:
+        connection = mysql.connector.connect(host='localhost',
+                                             database='python_ocr_db',
+                                             user='ocr_python',
+                                             password='abhishek_kumar')
+
+        cursor = connection.cursor()
+        sql_insert_blob_query = """ INSERT INTO Image_details
+                          (photo,Due_Date,CA_No,Bill_Amount) VALUES (%s,%s,%s,%s)"""
+
+        empPicture = convertToBinaryData(Meter)
+        file = convertToBinaryData(biodataFile)
+
+        # Convert data into tuple format
+        insert_blob_tuple = (Due_Date, CA_No, Bill_Amount)
+        result = cursor.execute(sql_insert_blob_query, insert_blob_tuple)
+        connection.commit()
+        print("Image and file inserted successfully as a BLOB into Image_details table", result)
+
+    except mysql.connector.Error as error:
+        print("Failed inserting BLOB data into MySQL table {}".format(error))
+
+    finally:
+        if (connection.is_connected()):
+            cursor.close()
+            connection.close()
+            print("MySQL connection is closed")
+
+insertBLOB("Meter.png,C:\Users\annaa\PycharmProjects\OCR_Project\Meter.png",
+           "C:\Users\annaa\PycharmProjects\OCR_ProjectMeter_bioData.txt")
